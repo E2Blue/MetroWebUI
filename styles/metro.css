@@ -1,0 +1,55 @@
+/* Reset */
+h1,h2,h3,h4,h5,h6,p {margin:0.2em 0;}
+
+/* Metro */
+body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
+
+/* Tiles */
+
+.tile-container-six {width:960px;}
+.tile-container-four {width:640px;}
+.tile-container-double {width:320px;}
+.tile-container-single {width:160px;}
+
+.tile-container-single.inner,
+.tile-container-double.inner,
+.tile-container-four.inner,
+.tile-container-six.inner{
+	float:left;
+}
+.tile-single,
+.tile-double,
+.tile-triple,
+.tile-quarter {
+	position:relative;
+	float:left;
+	overflow:hidden;
+}
+
+.tile-single,
+.tile-double,
+.tile-triple {
+	height:150px;
+	margin:5px;
+}
+.tile-quarter {
+	height:70px;
+	margin:5px;
+}
+
+.tile-single,.tile-single>* {width:150px;}
+.tile-double,.tile-double>* {width:310px;}
+.tile-triple,.tile-triple>* {width:470px;}
+.tile-quarter,.tile-quarter>* {width:70px;}
+
+.tile-single>*,
+.tile-double>*,
+.tile-triple>*,
+.tile-quarter>*{
+	height:150px;
+}
+
+/* Slide */
+
+/* temp */
+.tile-double>div {position: relative; bottom:10px;margin:10px;}
