@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample MetroUI Project</title>
+	<script type="text/javascript" src="./scripts/JQuery-1.7.2-min.js"></script>
+	<script type="text/javascript" src="./scripts/metro.js"></script>
+	<link rel="stylesheet" type="text/css" href="./styles/metro.css"></link>
+	<link rel="stylesheet" type="text/css" href="./styles/metro-colors.css"></link>
+</head>
+
+	<div class="tile-container-six-fluid center">
+		<div class="tile-double bg-blue slide-js">
+			<div>This is a div element</div>
+			<div>This is another div element</div>
+		</div>
+		<div class="tile-single bg-red"></div>
+		<div class="tile-single bg-orange"></div>
+		<div class="tile-container-single inner">
+			<div class="tile-quarter bg-blue"></div>
+			<div class="tile-quarter bg-red"></div>
+			<div class="tile-quarter bg-green"></div>
+			<div class="tile-quarter bg-purple"></div>
+		</div>
+		<ul class="tile-single bg-brown slide-js">
+			<li>first li</li>
+			<li>second li</li>
+			<li>third li</li>
+		</ul>
+		<div class="tile-triple bg-green slide-js">
+			<div>some text</div>
+			<div>other text</div>
+		</div>
+		<div class="tile-double bg-red"></div>
+		<div class="tile-single bg-pink"></div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slide-js').metroSlide();
+		});
+	</script>
+</html>

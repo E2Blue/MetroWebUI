@@ -4,19 +4,27 @@ h1,h2,h3,h4,h5,h6,p {margin:0.2em 0;}
 /* Metro */
 body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 
-/* Tiles */
+/* == Tiles == */
 
 .tile-container-six {width:960px;}
 .tile-container-four {width:640px;}
 .tile-container-double {width:320px;}
 .tile-container-single {width:160px;}
 
+/* Fluid containers */
+.tile-container-six-fluid {max-width:960px;}
+.tile-container-four-fluid {max-width:640px;}
+.tile-container-double-fluid {max-width:320px;}
+.tile-container-single-fluid {max-width:160px;}
+
+/* Used for containing a set of tiles within a set of tiles */
 .tile-container-single.inner,
 .tile-container-double.inner,
 .tile-container-four.inner,
 .tile-container-six.inner{
 	float:left;
 }
+
 .tile-single,
 .tile-double,
 .tile-triple,
@@ -24,6 +32,7 @@ body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 	position:relative;
 	float:left;
 	overflow:hidden;
+	padding:0;
 }
 
 .tile-single,
@@ -37,19 +46,23 @@ body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 	margin:5px;
 }
 
-.tile-single,.tile-single>* {width:150px;}
-.tile-double,.tile-double>* {width:310px;}
-.tile-triple,.tile-triple>* {width:470px;}
-.tile-quarter,.tile-quarter>* {width:70px;}
+.tile-single,.tile-single>div,.tile-single>li {width:150px;}
+.tile-double,.tile-double>div,.tile-double>li {width:310px;}
+.tile-triple,.tile-triple>div,.tile-triple>li {width:470px;}
+.tile-quarter,.tile-quarter>div,.tile-quarter>li {width:70px;}
 
-.tile-single>*,
-.tile-double>*,
-.tile-triple>*,
-.tile-quarter>*{
+.tile-single>div,.tile-single>li,
+.tile-double>div,.tile-double>li,
+.tile-triple>div,.tile-triple>li,
+.tile-quarter>div,.tile-quarter>li{
 	height:150px;
 }
 
-/* Slide */
+/* == Slide == */
 
-/* temp */
-.tile-double>div {position: relative; bottom:10px;margin:10px;}
+/* == temp == */
+
+
+/* == Utility classes == */
+.clear {clear: both;}
+.center {margin-left:auto;margin-right:auto;}
