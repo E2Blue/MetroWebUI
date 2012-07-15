@@ -4,11 +4,11 @@
 	jQuery.fn.metroSlide = function(){
 		this.each(function(){
 			that = $(this);
-			if(that.children.length > 1){
+			if(that.children().not('.noslide-js').length > 1){
 				(function(that){
 					setInterval(function(){
-						that.children(':nth-child(2)').show();
-						that.children(':first').slideUp(830,function(){
+						that.children(':not(.noslide-js):nth-child(2)').show();
+						that.children(':not(.noslide-js):first').slideUp(830,function(){
 							that.append($(this));
 						});
 					},2000);
