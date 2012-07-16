@@ -10,6 +10,7 @@ body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 .tile-container-four {width:640px;}
 .tile-container-double {width:320px;}
 .tile-container-single {width:160px;}
+.tile-container-quarter {width:80px;}
 
 /* Fluid containers */
 .tile-container-six-fluid {max-width:960px;}
@@ -18,6 +19,7 @@ body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 .tile-container-single-fluid {max-width:160px;}
 
 /* Used for containing a set of tiles within a set of tiles */
+.tile-container-quarter.inner,
 .tile-container-single.inner,
 .tile-container-double.inner,
 .tile-container-four.inner,
