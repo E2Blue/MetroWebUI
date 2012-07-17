@@ -8,19 +8,21 @@ body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 /* == Layout base == */
 .tile-single,.tile-single>div,.tile-single>li,.header-single {width:150px;}
 .tile-double,.tile-double>div,.tile-double>li,.header-double {width:310px;}
-.tile-triple,.tile-triple>div,.tile-triple>li {width:470px;}
+.tile-triple,.tile-triple>div,.tile-triple>li,.header-triple {width:470px;}
 .header-four {width:630px;}
 .header-six {width:950px;}
 .tile-quarter,.tile-quarter>div,.tile-quarter>li,.header-quarter {width:70px;}
 
 .metro-container-six {width:960px;}
 .metro-container-four {width:640px;}
+.metro-container-triple {width:480px;}
 .metro-container-double {width:320px;}
 .metro-container-single {width:160px;}
 .metro-container-quarter {width:80px;}
 
 .header-six,
 .header-four,
+.header-triple,
 .header-double,
 .header-single,
 .header-quarter,
@@ -44,6 +46,7 @@ body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 .metro-container-quarter.inner,
 .metro-container-single.inner,
 .metro-container-double.inner,
+.metro-container-triple.inner,
 .metro-container-four.inner,
 .metro-container-six.inner{
 	float:left;
@@ -52,7 +55,13 @@ body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 .tile-single,
 .tile-double,
 .tile-triple,
-.tile-quarter {
+.tile-quarter,
+.header-single,
+.header-double,
+.header-triple,
+.header-four,
+.header-six,
+.header-quarter {
 	position:relative;
 	float:left;
 	overflow:hidden;

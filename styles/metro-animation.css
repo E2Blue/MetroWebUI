@@ -17,8 +17,8 @@
 .bg-purple.ease-bg:hover {background-color:#A200FF;}
 .bg-red.ease-bg:hover {background-color:#B51400;}
 .bg-teal.ease-bg:hover {background-color:#00ABA9;}
-.bg-light-grey.ease-bg:hover {background-color:#F0F1F4;}
-.bg-darkgrey.ease-bg:hover {background-color:#E4E5E7;}
+.bg-lightgrey.ease-bg:hover {background-color:#E4E5E7;}
+.bg-darkgrey.ease-bg:hover {background-color:#F0F1F4;}
 
 
 /* Sizes - drag 6 drop || major visual issues in FF - testing with hover but should be enabled differently later on */
