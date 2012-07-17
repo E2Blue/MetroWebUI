@@ -1,10 +1,12 @@
-/* Background-colors */
-.ease-bg:hover {
+
+.ease-bg:hover,.ease-size {
 	-moz-transition: all .5s ease-in-out;
 	-ms-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
 	-webkit-transition: all .5s ease-in-out;
 }
+
+/* Background-colors */
 .bg-accent.ease-bg:hover,.bg-blue.ease-bg:hover {background-color:#1BA1E2;}
 .bg-brown.ease-bg:hover {background-color:#A05000;}
 .bg-green.ease-bg:hover {background-color:#339933;}
@@ -17,3 +19,18 @@
 .bg-teal.ease-bg:hover {background-color:#00ABA9;}
 .bg-light-grey.ease-bg:hover {background-color:#F0F1F4;}
 .bg-darkgrey.ease-bg:hover {background-color:#E4E5E7;}
+
+
+/* Sizes - drag 6 drop || major visual issues in FF - testing with hover but should be enabled differently later on */
+.tile-single.dd,
+.tile-single.ease-size:hover,
+.tile-double.ease-size:hover,
+.tile-triple.ease-size:hover,
+.tile-quarter.ease-size:hover {
+	margin:10px;height:140px;
+}
+
+.tile-single.dd,.tile-single.ease-size:hover,.tile-single.ease-size:hover>div,.tile-single.ease-size:hover>li {width:140px;}
+.tile-double.ease-size:hover,.tile-double.ease-size:hover>div,.tile-double.ease-size:hover>li {width:300px;}
+.tile-triple.ease-size:hover,.tile-triple.ease-size:hover>div,.tile-triple.ease-size:hover>li {width:460px;}
+.tile-quarter.ease-size:hover,.tile-quarter.ease-size:hover>div,.tile-quarter.ease-size:hover>li {width:60px;}
