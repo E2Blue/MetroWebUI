@@ -1,29 +1,51 @@
 /* Reset */
 h1,h2,h3,h4,h5,h6,p {margin:0.2em 0;}
+h1 {font-size:3.2em;}
 
 /* Metro */
 body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 
-/* == Tiles == */
+/* == Layout base == */
+.tile-single,.tile-single>div,.tile-single>li,.header-single {width:150px;}
+.tile-double,.tile-double>div,.tile-double>li,.header-double {width:310px;}
+.tile-triple,.tile-triple>div,.tile-triple>li {width:470px;}
+.header-four {width:630px;}
+.header-six {width:950px;}
+.tile-quarter,.tile-quarter>div,.tile-quarter>li,.header-quarter {width:70px;}
 
-.tile-container-six {width:960px;}
-.tile-container-four {width:640px;}
-.tile-container-double {width:320px;}
-.tile-container-single {width:160px;}
-.tile-container-quarter {width:80px;}
+.metro-container-six {width:960px;}
+.metro-container-four {width:640px;}
+.metro-container-double {width:320px;}
+.metro-container-single {width:160px;}
+.metro-container-quarter {width:80px;}
+
+.header-six,
+.header-four,
+.header-double,
+.header-single,
+.header-quarter,
+.tile-quarter {
+	height:70px;
+	margin:5px;
+}
+
+/* == Headers == */
+{
+	height:80px;
+}
 
 /* Fluid containers */
-.tile-container-six-fluid {max-width:960px;}
-.tile-container-four-fluid {max-width:640px;}
-.tile-container-double-fluid {max-width:320px;}
-.tile-container-single-fluid {max-width:160px;}
+.metro-container-six-fluid {max-width:960px;}
+.metro-container-four-fluid {max-width:640px;}
+.metro-container-double-fluid {max-width:320px;}
+.metro-container-single-fluid {max-width:160px;}
 
 /* Used for containing a set of tiles within a set of tiles */
-.tile-container-quarter.inner,
-.tile-container-single.inner,
-.tile-container-double.inner,
-.tile-container-four.inner,
-.tile-container-six.inner{
+.metro-container-quarter.inner,
+.metro-container-single.inner,
+.metro-container-double.inner,
+.metro-container-four.inner,
+.metro-container-six.inner{
 	float:left;
 }
 
@@ -43,15 +65,6 @@ body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 	height:150px;
 	margin:5px;
 }
-.tile-quarter {
-	height:70px;
-	margin:5px;
-}
-
-.tile-single,.tile-single>div,.tile-single>li {width:150px;}
-.tile-double,.tile-double>div,.tile-double>li {width:310px;}
-.tile-triple,.tile-triple>div,.tile-triple>li {width:470px;}
-.tile-quarter,.tile-quarter>div,.tile-quarter>li {width:70px;}
 
 .tile-single>div,.tile-single>li,
 .tile-double>div,.tile-double>li,
@@ -61,7 +74,24 @@ body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 }
 
 /* == temp == */
-
+.twitter,
+.microsoft,
+.heart,
+.game,
+.me,
+.work,
+.music {
+	background-repeat: no-repeat;
+	background-position: center center
+}
+.twitter {background-image: url('../images/twitter.png');}
+.tile-quarter.twitter {background-image: url('../images/twitter-quarter.png');}
+.microsoft {background-image:url('../images/microsoft.png');}
+.heart {background-image:url('../images/heart.png');}
+.game {background-image:url('../images/joystick.png');}
+.me {background-image:url('../images/user.png');}
+.work {background-image:url('../images/work.png');}
+.music {background-image:url('../images/headphone.png');}
 
 /* == Utility classes == */
 .clear {clear: both;}
