@@ -4,7 +4,7 @@ Metro Web UI
 This project is meant to provide a simple to use framework
 for building metro UI style web applications.
 
-The Sample branch contains a index.html file to show how to use the framework.
+The index.html file has examples on how to use the framework.
 
 
 Usage
