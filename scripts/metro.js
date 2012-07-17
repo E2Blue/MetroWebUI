@@ -17,4 +17,31 @@
 		});
 		return this;
 	}
+
+	/* Randomly insert the last mosaic tile into the visible ones */
+	jQuery.fn.mosaic = function(){
+		this.each(function(){
+			that = $(this);
+			var settings = {fadeDuration:500,intervalDuration:2000};
+			if(that.children().length > 9){
+				(function(that){
+					setInterval(function(){
+						var lastElement = $(that.children()[that.children().length-1]);
+						var replaceElement = $(that.children()[Math.floor(Math.random() * 8)]);
+						lastElement.hide();
+						replaceElement.after(lastElement);
+
+						replaceElement.fadeOut(settings.fadeDuration,function(){
+							lastElement.fadeIn(settings.fadeDuration,function(){								
+								$(that.children()[that.children().length-1]).after(replaceElement);
+								replaceElement.show();
+
+							});						
+						});
+					},settings.intervalDuration);
+				})(that);
+			}
+		});
+		return this;
+	}
 })(jQuery);

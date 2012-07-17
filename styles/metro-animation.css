@@ -34,3 +34,11 @@
 .tile-double.ease-size:hover,.tile-double.ease-size:hover>div,.tile-double.ease-size:hover>li {width:300px;}
 .tile-triple.ease-size:hover,.tile-triple.ease-size:hover>div,.tile-triple.ease-size:hover>li {width:460px;}
 .tile-quarter.ease-size:hover,.tile-quarter.ease-size:hover>div,.tile-quarter.ease-size:hover>li {width:60px;}
+
+/* == Mosiac == */
+
+.mosaic>div,.mosaic>li{
+	height:50px;
+	width:50px;
+	float:left;
+}
