@@ -19,7 +19,7 @@
 	}
 
 	/* Randomly insert the last mosaic tile into the visible ones */
-	jQuery.fn.mosaic = function(){
+	jQuery.fn.metroMosaic = function(){
 		this.each(function(){
 			that = $(this);
 			var settings = {fadeDuration:500,intervalDuration:2000};
