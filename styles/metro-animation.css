@@ -37,7 +37,7 @@
 
 /* == Mosiac == */
 
-.mosaic>div,.mosaic>li{
+.mosaic>div,.mosaic>li,.mosaic>img{
 	height:50px;
 	width:50px;
 	float:left;
