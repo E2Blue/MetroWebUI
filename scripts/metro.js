@@ -10,6 +10,7 @@
 						that.children(':not(.noslide-js):nth-child(2)').show();
 						that.children(':not(.noslide-js):first').slideUp(830,function(){
 							that.append($(this));
+							that.append(that.children('.no-slide-js'));
 						});
 					},2000);
 				})(that);
@@ -22,7 +23,7 @@
 	jQuery.fn.metroMosaic = function(){
 		this.each(function(){
 			that = $(this);
-			var settings = {fadeDuration:500,intervalDuration:2000};
+			var settings = {fadeDuration:400,intervalDuration:2000};
 			if(that.children().length > 9){
 				(function(that){
 					setInterval(function(){
@@ -41,6 +42,15 @@
 					},settings.intervalDuration);
 				})(that);
 			}
+		});
+		return this;
+	}
+
+	/* Inserts a sliding alertbox in the specified element(s)*/
+	jQuery.fn.metroAlert = function(){
+		this.each(function(){
+			that = $(this);
+			var settings = {cssClass: '',click: close()};
 		});
 		return this;
 	}
