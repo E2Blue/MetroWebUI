@@ -1,10 +1,15 @@
 /* Reset */
 h1,h2,h3,h4,h5,h6,p {margin:0.2em 0;}
 h1 {font-size:3.2em;}
-body {margin:0px;padding:0px;}
+body,ul,li {margin:0px;padding:0px;}
+ul,li {list-style:none;}
+
+
+/* test typography */
+p {padding-bottom:10px;}
 
 /* Metro */
-body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
+body {font-family: 'Segoe UI', Helvetica, Arial, Sans-Serif;}
 
 /* == Layout base == */
 .tile-single,.tile-single>div,.tile-single>li,.header-single {width:150px;}
@@ -14,7 +19,7 @@ body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 .header-six {width:950px;}
 .tile-quarter,.tile-quarter>div,.tile-quarter>li,.header-quarter {width:70px;}
 
-.metro-container-six {width:960px;}
+.metro-container-six,.metro-container {width:960px;}
 .metro-container-four {width:640px;}
 .metro-container-triple {width:480px;}
 .metro-container-double {width:320px;}
@@ -38,7 +43,7 @@ body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 .header-single,
 .header-quarter {
 	height:70px;
-	margin:0 5px;
+	margin:5px;
 }
 
 .header-double-half {width:310px;}
@@ -81,6 +86,9 @@ body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 	padding:0;
 }
 
+.content {margin:5px;}
+p.content {font-size:0.9em;}
+
 .tile-single,
 .tile-double,
 .tile-triple {
@@ -100,12 +108,22 @@ body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 /* HERO:
 	A hero unit is used for drawing a users attention.
 	The hero is always the size of its container
-	and the hero-double refers to its height.
+	and the hero.double refers to its height.
 	Place the hero inside a inner container if you
 	want it to flow with a tile layout.
 */
-.hero {width:100%;margin:5px;height:150px;}
+.hero {margin:5px;height:150px;}
 .hero.double{height:310px;}
+
+/* == Navbar == */
+.navbar {
+	width:140px;
+	margin:5px;
+	padding:5px;
+	list-style:none;
+}
+.navbar>.sub {margin-left:5px;}
+.navbar>.sub_2 {margin-left:10px;}
 
 /* == temp == */
 .twitter,
@@ -133,4 +151,7 @@ body {font-family: Segoe UI,Tahoma,Arial,Verdana,sans-serif;}
 /* == Utility classes == */
 .clear {clear: both;}
 .center {margin-left:auto;margin-right:auto;}
-.right {float:right;}
+.right {float:right !IMPORTANT;}
+
+/* == Buttons == */
+.btn{padding:5px 10px 7px 10px;font-size: 16px;text-align: center;cursor:pointer;border:none;color:#333;}
