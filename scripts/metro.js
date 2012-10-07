@@ -1,6 +1,15 @@
 
 /* Perform a sliding effect of the elements children */
 (function($){
+	$(document).ready(function(){
+		$('.modal-backdrop').on('click',function(){
+			$('.modal').metroModal('hide');
+		});
+	});
+
+
+	/* == jQuery extensions == */
+
 	jQuery.fn.metroSlide = function(){
 		this.each(function(){
 			that = $(this);
@@ -44,6 +53,21 @@
 			}
 		});
 		return this;
+	}
+
+	jQuery.fn.metroModal = function(action){
+		this.each(function(){
+			var that = this;
+			if(action === 'show'){
+				$('.modal-backdrop').fadeIn('25',function(){
+					$(that).addClass('open');
+				});
+				
+			}else if(action === 'hide'){
+				$(this).removeClass('open');
+				$('.modal-backdrop').fadeOut('25');
+			}
+		});
 	}
 
 	/* Inserts a sliding alertbox in the specified element(s)*/

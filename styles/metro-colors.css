@@ -11,8 +11,10 @@
 .bg-lightgrey {background-color:#F0F1F4;}
 .bg-grey,.btn {background-color:#E4E5E7;}
 .bg-darkgrey{background-color:#aaa;}
-.bg-background {background-color:black;}
+.bg-background,.modal-backdrop {background-color:black;}
 .btn.inverse,.btn.inverse.disabled:hover {background-color:#333;}
+
+.modal {background:white;}
 
 .btn.disabled {color:#bbb;opacity: 0.5;filter: alpha(opacity=50);cursor:default;}
 .btn:hover {-webkit-transition:background-color 0.1s ease-in; -moz-transition:background-color 0.1s ease-in; -o-transition:background-color 0.5s ease-in; transition:background-color 0.1s ease-in; }

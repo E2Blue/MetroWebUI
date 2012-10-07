@@ -148,10 +148,25 @@ p.content {font-size:0.9em;}
 .search-mini {background-image:url('../images/search-mini.png');}
 .mail-mini {background-image:url('../images/mail-mini.png');}
 
+/* == Buttons == */
+.btn{padding:5px 10px 7px 10px;font-size: 16px;text-align: center;cursor:pointer;border:none;color:#333;}
+
+/* == Modal == */
+.modal-backdrop {opacity: 0.8; filter: alpha(opacity=80);position:absolute;top:0;bottom:0;left:0;right: 0;display:none;}
+.modal {min-height: 400px;position: absolute;top: 200px;width: 100%;display:none;}
+.modal.open {display:block;}
+.modal > .content {margin:0 auto;width:940px;}
+.modal > .content > .header, .modal > .content > .body, .modal > .content > .footer {width:940px;min-height:1px;margin-left:-10px;margin-top:20px;}
+
+/* == Grid == */
+.row {margin-left:-20px;}
+
+.span24 {float:left;margin-left:20px;}
+
+.span24 {width:940px;}
+
 /* == Utility classes == */
 .clear {clear: both;}
 .center {margin-left:auto;margin-right:auto;}
 .right {float:right !IMPORTANT;}
 
-/* == Buttons == */
-.btn{padding:5px 10px 7px 10px;font-size: 16px;text-align: center;cursor:pointer;border:none;color:#333;}
