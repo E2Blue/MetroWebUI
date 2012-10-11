@@ -1,0 +1,54 @@
+@media (min-width:768px) and (max-width: 979px)
+{
+	/* All span widths when they are inside of containers */
+	.container > .span24 {width:756px;}
+	.container > .span23 {width:724px;}
+	.container > .span22 {width:692px;}
+	.container > .span21 {width:660px;}
+	.container > .span20 {width:628px;}
+	.container > .span19 {width:596px;}
+	.container > .span18 {width:564px;}
+	.container > .span17 {width:532px;}
+	.container > .span16 {width:500px;}
+	.container > .span15 {width:468px;}
+	.container > .span14 {width:436px;}
+	.container > .span13 {width:404px;}
+	.container > .span12 {width:372px;}
+	.container > .span11 {width:340px;}
+	.container > .span10 {width:308px;}
+	.container > .span9 {width:276px;}
+	.container > .span8 {width:244px;}
+	.container > .span7 {width:212px;}
+	.container > .span6 {width:180px;}
+	.container > .span5 {width:148px;}
+	.container > .span4 {width:116px;}
+	.container > .span3 {width:84px;}
+	.container > .span2 {width:52px;}
+	.container > .span1 {width:20px;}
+
+	/* Width of containers when they are combined with span* */
+	.container.span24,.container {width:768px;}
+	.container.span23 {width:736px;}
+	.container.span22 {width:704px;}
+	.container.span21 {width:672px;}
+	.container.span20 {width:640px;}
+	.container.span19 {width:608px;}
+	.container.span18 {width:576px;}
+	.container.span17 {width:544px;}
+	.container.span16 {width:512px;}
+	.container.span15 {width:480px;}
+	.container.span14 {width:448px;}
+	.container.span13 {width:416px;}
+	.container.span12 {width:384px;}
+	.container.span11 {width:352px;}
+	.container.span10 {width:320px;}
+	.container.span9 {width:288px;}
+	.container.span8 {width:256px;}
+	.container.span7 {width:224px;}
+	.container.span6 {width:192px;}
+	.container.span5 {width:160px;}
+	.container.span4 {width:128px;}
+	.container.span3 {width:96px;}
+	.container.span2 {width:64px;}
+	.container.span1 {width:32px;}
+}
