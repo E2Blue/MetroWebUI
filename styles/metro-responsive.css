@@ -62,7 +62,7 @@
 @media (min-width:768px) and (max-width: 979px)
 {
 	/* All span widths when they are inside of containers */
-	.container > .span24 {width:756px;}
+	.container > .span24, .container > .span24-tablet {width:756px;}
 	.container > .span23 {width:724px;}
 	.container > .span22 {width:692px;}
 	.container > .span21 {width:660px;}
@@ -112,4 +112,59 @@
 	.container.span3 {width:96px;}
 	.container.span2 {width:64px;}
 	.container.span1 {width:32px;}
+}
+
+@media (max-width:767px)
+{
+	/* All span widths when they are inside of containers */
+	.container > .span24, .container > .span24-large,
+	.container > .span23, .container > .span23-large,
+	.container > .span22, .container > .span22-large,
+	.container > .span21, .container > .span21-large,
+	.container > .span20, .container > .span20-large,
+	.container > .span19, .container > .span19-large,
+	.container > .span18, .container > .span18-large,
+	.container > .span17, .container > .span17-large,
+	.container > .span16, .container > .span16-large,
+	.container > .span15, .container > .span15-large,
+	.container > .span14, .container > .span14-large,
+	.container > .span13, .container > .span13-large,
+	.container > .span12, .container > .span12-large,
+	.container > .span11, .container > .span11-large,
+	.container > .span10, .container > .span10-large,
+	.container > .span9, .container > .span9-large,
+	.container > .span8, .container > .span8-large,
+	.container > .span7, .container > .span7-large,
+	.container > .span6, .container > .span6-large,
+	.container > .span5, .container > .span5-large,
+	.container > .span4, .container > .span4-large,
+	.container > .span3, .container > .span3-large,
+	.container > .span2, .container > .span2-large,
+	.container > .span1, .container > .span1-large {width:100%;float:none !IMPORTANT;margin: 5px 0 0 0;}
+
+	/* Width of containers when they are combined with span* */
+	.container.span24, .container, .container.span24-large,
+	.container.span23, .container.span23-large,
+	.container.span22, .container.span22-large,
+	.container.span21, .container.span21-large,
+	.container.span20, .container.span20-large,
+	.container.span19, .container.span19-large,
+	.container.span18, .container.span18-large,
+	.container.span17, .container.span17-large,
+	.container.span16, .container.span16-large,
+	.container.span15, .container.span15-large,
+	.container.span14, .container.span14-large,
+	.container.span13, .container.span13-large,
+	.container.span12, .container.span12-large,
+	.container.span11, .container.span11-large,
+	.container.span10, .container.span10-large,
+	.container.span9, .container.span9-large,
+	.container.span8, .container.span8-large,
+	.container.span7, .container.span7-large,
+	.container.span6, .container.span6-large,
+	.container.span5, .container.span5-large,
+	.container.span4, .container.span4-large,
+	.container.span3, .container.span3-large,
+	.container.span2, .container.span2-large,
+	.container.span1,.container.span1-large {width:100%;float:none !IMPORTANT;margin: 5px 0 0 0;}
 }

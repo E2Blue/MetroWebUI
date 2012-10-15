@@ -1,12 +1,15 @@
 /* Reset */
 h1,h2,h3,h4,h5,h6,p {margin:0.2em 0;}
 h1 {font-size:3.2em;}
+h2 {font-size: 2.1em;}
 body,ul,li {margin:0px;padding:0px;}
 ul,li {list-style:none;}
 
 
 /* test typography */
 p {padding-bottom:10px;}
+
+.aside {font-size:0.76em;}
 
 /* Metro */
 body {font-family: 'Segoe UI', Helvetica, Arial, Sans-Serif;}
@@ -116,14 +119,9 @@ p.content {font-size:0.9em;}
 .hero.double{height:310px;}
 
 /* == Navbar == */
-.navbar {
-	width:140px;
-	margin:5px;
-	padding:5px;
-	list-style:none;
-}
-.navbar>.sub {margin-left:5px;}
-.navbar>.sub_2 {margin-left:10px;}
+.navbar {}
+.navbar .item {float:left;margin-right:12px;}
+.navbar .item a:hover {text-decoration: none;}
 
 /* == temp == */
 .twitter,
