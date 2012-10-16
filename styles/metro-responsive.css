@@ -218,6 +218,8 @@
 
 @media (max-width:767px)
 {
+	body {padding:0 12px;}
+	
 	/* All span widths when they are inside of containers */
 	.container > .span24, .container > .span24-large,
 	.container > .span23, .container > .span23-large,
