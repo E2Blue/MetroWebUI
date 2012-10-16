@@ -163,6 +163,57 @@
 	.container.span3 {width:96px;}
 	.container.span2 {width:64px;}
 	.container.span1 {width:32px;}
+
+	/* The span*-tablet can unfortunately not be on the same row as the normal spans */
+	.container > .span24-tablet {width:756px;}
+	.container > .span23-tablet {width:724px;}
+	.container > .span22-tablet {width:692px;}
+	.container > .span21-tablet {width:660px;}
+	.container > .span20-tablet {width:628px;}
+	.container > .span19-tablet {width:596px;}
+	.container > .span18-tablet {width:564px;}
+	.container > .span17-tablet {width:532px;}
+	.container > .span16-tablet {width:500px;}
+	.container > .span15-tablet {width:468px;}
+	.container > .span14-tablet {width:436px;}
+	.container > .span13-tablet {width:404px;}
+	.container > .span12-tablet {width:372px;}
+	.container > .span11-tablet {width:340px;}
+	.container > .span10-tablet {width:308px;}
+	.container > .span9-tablet {width:276px;}
+	.container > .span8-tablet {width:244px;}
+	.container > .span7-tablet {width:212px;}
+	.container > .span6-tablet {width:180px;}
+	.container > .span5-tablet {width:148px;}
+	.container > .span4-tablet {width:116px;}
+	.container > .span3-tablet {width:84px;}
+	.container > .span2-tablet {width:52px;}
+	.container > .span1-tablet {width:20px;}
+
+	.container.span24-tablet {width:768px;}
+	.container.span23-tablet {width:736px;}
+	.container.span22-tablet {width:704px;}
+	.container.span21-tablet {width:672px;}
+	.container.span20-tablet {width:640px;}
+	.container.span19-tablet {width:608px;}
+	.container.span18-tablet {width:576px;}
+	.container.span17-tablet {width:544px;}
+	.container.span16-tablet {width:512px;}
+	.container.span15-tablet {width:480px;}
+	.container.span14-tablet {width:448px;}
+	.container.span13-tablet {width:416px;}
+	.container.span12-tablet {width:384px;}
+	.container.span11-tablet {width:352px;}
+	.container.span10-tablet {width:320px;}
+	.container.span9-tablet {width:288px;}
+	.container.span8-tablet {width:256px;}
+	.container.span7-tablet {width:224px;}
+	.container.span6-tablet {width:192px;}
+	.container.span5-tablet {width:160px;}
+	.container.span4-tablet {width:128px;}
+	.container.span3-tablet {width:96px;}
+	.container.span2-tablet {width:64px;}
+	.container.span1-tablet {width:32px;}
 }
 
 @media (max-width:767px)
