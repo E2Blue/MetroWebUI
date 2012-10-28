@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample MetroUI Project</title>
+	<!--<script type="text/javascript" src="./scripts/JQuery-1.7.2-min.js"></script>-->
+	<!--<script type="text/javascript" src="./scripts/metro.js"></script>-->
+	<link rel="stylesheet" type="text/css" href="./styles/metro.css"></link>
+	<link rel="stylesheet" type="text/css" href="./styles/metro-responsive.css"></link>
+	<link rel="stylesheet" type="text/css" href="./styles/metro-colors.css"></link>
+	<!--<link rel="stylesheet" type="text/css" href="./styles/metro-animation.css"></link>-->
+	<link rel="stylesheet" type="text/css" href="./styles/shCore.css"></link>
+	<link rel="stylesheet" type="text/css" href="./styles/shThemeDefault.css"></link>
+	<script type="text/javascript" src="./scripts/shCore.js"></script>
+	<script type="text/javascript" src="./scripts/shBrushXml.js"></script>
+	<style>
+		.grid-example, .site-example {
+			margin-top: 6px;
+			margin-bottom: 6px;
+			background:#1BA1E2;
+			min-height: 30px;
+			text-align:center;
+			color:white;
+			padding-top:10px;
+		}
+		.site-example {
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="span24">
+			<h4>Metro web UI</h4>
+		</div>
+		<div class="span24">
+			<div class="navbar">
+				<a class="item active" href="./scaffolding.html">Scaffolding</a>
+				<a class="item" href="./imaging.html">Imaging</a>
+				<div class="item">
+					Menuitem
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	<div class="container">
+		<div class="span24 orange" style="background:url(http://flickholdr.com/1200/300/woods) no-repeat center center; height:300px;position:relative;">
+			<h2 style="position:absolute;bottom:20px;left:20px;">This is a hero unit</h2>
+		</div>
+		<div class="clear"></div>
+	</div>
+		<div class="span4">
+			<h4>A standard menu</h4>
+			<ul>
+				<li><a href="#grid">Grid</a></li>
+				<li><a href="#responsive">Responsive</a></li>
+			</ul>
+		</div>
+		<div class="container span20">
+			<h1 class="span20">Scaffolding</h1>
+			<div id="grid" class="container span20">
+				<h2 class="span20">Grid</h2>
+				<p class="span20">Having a great grid system is essential to building a great and maintainable website, responsive or not. A grid doesn't have to implement 12 or 16 or 24 columns. If all you need is a website with pages that can contain content and a side menu, then why implement the rest? Just build a span12, span9 and span3 class, the main thing is that your grid is well defined in its boundries, this allows you to easily implement other sizes later on. You could of course call your classes span1, span3 and span4 or anything else, but this makes it harder to extend and they might lose their semantic values.</p>
+				<div class="container span20">
+					<div class="span20 grid-example">20</div>
+					<div class="span10 grid-example">10</div>
+					<div class="span10 grid-example">10</div>
+					<div class="span8 grid-example">8</div>
+					<div class="span4 grid-example">4</div>
+					<div class="span8 grid-example">8</div>
+					<div class="span1 grid-example">1</div>
+					<div class="span18 grid-example">18</div>
+					<div class="span1 grid-example">1</div>
+				</div>
+				<div class="span20">
+					<h3>Containers</h3>
+					<p>M web UI uses containers as a way to structure content content. Containers and rows in other grid system are often just a simple block element meant to separate content vertically. MWUI adds to the semantic value of a container by allowing it to also structure content horizontally, this is done by combining the <code>.container</code> with a <code>.span*</code>. This makes it immediately clear that this is a container that covers * number of columns on the page, and all of its children have a different kind of bond than if the hierarchy were <code>.container > .span > element</code>. It also allows for extremely flexible layouts where containers can contain other containers instead of having to add a separate span element in between. Containers are not meant to visaully structure content and therefore contains no padding or margins, that is up to a child span to decide.</p>
+				</div>
+				<div class="span20">
+					<h3>Spans</h3>
+					<p>Spans are the structuring elements closest to the content. It can be a block element such as a <code>div</code> that contains several elements. Or it can be a content element such as a <code>h2</code> or a <code>p</code> element. What differs spans from containers are that they are meant to separate content on not just a basic layout level, but on a visual level too. This is why the spans have margins that make up the gutter of the grid. The MWUI grid is built on 24 columns and a span for covering any number of these columns, this is what creates the real layout. Since the MWUI grid is so flexible you can mix and match spans and containers to create the right layout and semantic for you, the spans inside of a container doesn't have to match up with the columns that the container covers, it will simple create a hole in your layout that may or may not be what you want.</p>
+				</div>
+				<div class="container span20">
+					<h3 class="span20">Using the grid</h3>
+					<p class="span16 span20-tablet">The grid is flexible in the sense that any container can have containers as children and any element can be a span. This removes some unnecessary markup while preserving the semantic nature of the grid. A container can also have a span class to allow containers to be horizontally aligned to each other. This also allows for a higher grade of flexibility in responsive layouts that uses transforming spans and containers.</p>
+					<div class="span4 span20-tablet aside">
+						<h4 class="accent">Example</h4>
+						<p>A normal website layout is to have a layout wide header followed by navigation to the left, content in the middle, info to the right and a layout wide footer below.</p>
+					</div>
+				</div>
+				<div class="container span20">
+					<div class="span20 site-example">
+						Header
+					</div>
+					<div class="span4 site-example">
+						Navigation
+					</div>
+					<div class="span12 site-example">
+						Content
+					</div>
+					<div class="span4 site-example">
+						Info
+					</div>
+					<div class="span20 site-example">
+						Footer
+					</div>
+				</div>
+				<div class="span20">
+					<pre class="brush:xml; gutter: false;">
+						&ltdiv class="container"&gt
+							&ltdiv class="span24"&gt
+								Header
+							&lt/div&gt
+							&ltdiv class="span6"&gt
+								Navigation
+							&lt/div&gt
+							&ltdiv class="span12"&gt
+								Content
+							&lt/div&gt
+							&ltdiv class="span6"&gt
+								Info
+							&lt/div&gt
+							&ltdiv class="span24"&gt
+								Footer
+							&lt/div&gt
+						&lt/div&gt
+					</pre>
+				</div>
+				<p class="span20">
+					The span classes in this example could also be combined with a container class to allow for even more specific columns in their content.
+				</p>
+				<div class="container span20">
+					<h2 id="responsive" class="span20">Responsive</h2>
+					<p class="span16 span20-tablet">Responsive web design or RWD gives us the power to show any element on our page in a different way on different device sizes. This is extremely helpful when adding mobile and tablet friendly versions of our site. In most cases we can get by by only editing our stylesheets and making minor changes to our layout, providing that our page layout is well defined.  However, if your mobile experience differs greatly from your desktop, then perhaps it's better to look at separating your codebase. This could still be done through new layouts/views and some responsive magic depending on your platform of choice.</p>
+					<div class="span4 span20-tablet aside">
+						<h4 class="accent">MWUI Responsive</h4>
+						<p>The easiest way to enable responsiveness in MWUI is to include the metro-responsive.css file. This includes not only containers and spans that adapt to different devices, but also transforming spans that enables you to easily create layouts that highlights information in different ways on different devise sizes.</p>
+					</div>
+					<h3 class="span20">Transforming spans</h3>
+					<p class="span16 span20-tablet">There is often a need for parts of a layout to cover different areas on different devices. This is why MWUI comes with "transforming" spans. These are spans that that act as larger or smaller spans on different devices. An element with the span20 and span16-tablet classes would for instance cover 20 columns on a desktop or large desktop computer, but 16 columns on a tablet.</p>
+					<div class="span4 span20-tablet aside">
+						<h4 class="accent">Example</h4>
+						<p>Take the earlier grid example, perhaps we want the right information column to be shown before the main content on a tablet to allow more horizontal size for the main content.</p>
+					</div>
+					<div class="container span20">
+						<div class="span20 site-example">
+							Header
+						</div>
+						<div class="span4 span20-tablet right site-example">
+							Info
+						</div>
+						<div class="span4 site-example">
+							Navigation
+						</div>
+						<div class="span12 span16-tablet site-example">
+							Content
+						</div>
+						<div class="span20 site-example">
+							Footer
+						</div>
+					</div>
+					<div class="span20">
+						<pre class="brush:xml; gutter: false;">
+							&ltdiv class="container"&gt
+								&ltdiv class="span24"&gt
+									Header
+								&lt/div&gt
+								&ltdiv class="span6 span24-tablet right"&gt
+									Info
+								&lt/div&gt
+								&ltdiv class="span6"&gt
+									Navigation
+								&lt/div&gt
+								&ltdiv class="span12 span18-tablet"&gt
+									Content
+								&lt/div&gt
+								&ltdiv class="span24"&gt
+									Footer
+								&lt/div&gt
+							&lt/div&gt
+						</pre>
+					</div>
+					<p class="span20">
+						Try dragging your (html5 enabled) web browser down to a tablet width to see how the transforming spans changes the layout of the example.
+					</p>
+					<p class="span20">
+						The info element in this example takes up 6 columns in large and desktop sizes, but it will show as a layout wide (24 column) element on a tablet. We also have to transform the content element to make use of the new space so we increase it from 12 columns on large and desktop to cover 18 columns on a tablet.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="span24" style="min-height:200px;">
+		</div>
+	</div>
+	<script type="text/javascript">
+
+    	SyntaxHighlighter.all()
+	</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample MetroUI Project</title>
+	<!--<script type="text/javascript" src="./scripts/JQuery-1.7.2-min.js"></script>-->
+	<!--<script type="text/javascript" src="./scripts/metro.js"></script>-->
+	<link rel="stylesheet" type="text/css" href="./styles/metro.css"></link>
+	<link rel="stylesheet" type="text/css" href="./styles/metro-imaging.css"></link>
+	<link rel="stylesheet" type="text/css" href="./styles/metro-responsive.css"></link>
+	<link rel="stylesheet" type="text/css" href="./styles/metro-colors.css"></link>
+	<!--<link rel="stylesheet" type="text/css" href="./styles/metro-animation.css"></link>-->
+	<link rel="stylesheet" type="text/css" href="./styles/shCore.css"></link>
+	<link rel="stylesheet" type="text/css" href="./styles/shThemeDefault.css"></link>
+	<script type="text/javascript" src="./scripts/shCore.js"></script>
+	<script type="text/javascript" src="./scripts/shBrushXml.js"></script>
+	<style>
+		#hero > * {
+			background-repeat:no-repeat;
+			background:url('./images/icons/tiles-tablet.png');
+			width:84px; 
+			height:300px;
+			float:left;
+			margin-left:30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="span24">
+			<h4>Metro web UI</h4>
+		</div>
+		<div class="span24">
+			<div class="navbar">
+				<a class="item" href="./scaffolding.html">Scaffolding</a>
+				<a class="item active" href="./imaging.html">Imaging</a>
+				<div class="item">
+					Menuitem
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="hero" class="span24 bg-blue" style="height:300px;">
+			<div style="background-position:0 40px;"></div>
+			<div style="background-position:0 -214px;"></div>
+			<div style="background-position:0 -472px;"></div>
+			<div style="background-position:0 -722px;"></div>
+		</div>
+		<div class="container">
+			<div class="span3 tile bg-green microsoft"></div>
+			<div class="span3 tile bg-red github"></div>
+			<div class="span3 tile bg-purple twitter"></div>
+			<div class="span3 tile bg-orange linkedin"></div>
+			<div class="span3 tile bg-brown youtube"></div>
+			<div class="span3 tile bg-pink wp"></div>
+			<div class="span3 tile bg-teal facebook"></div>
+			<div class="span3 tile bg-magenta desktop"></div>
+		</div>
+		<div class="span24">
+			<h1>Imaging</h1>
+			<h2>Sprites</h2>
+			<p>Using sprites is a common technique to serve images that are meant to be used as icons. It means combining several images into one image and then using positioning to position them on an appropriate element. Pros of using this technique is (in most cases) bandwidth saving and making fewer requests to the server, thus saving even more since concurrent requests are usually limited. Cons are that a background image can't be centered on a large element since this would show other images along the edges. It is also important to decide which images should be packed together. Packing 1500 images in a sprite if you're only going to use one or two is not good since it would take a long time to get the initial download (it would hopefully be clien side cached after that).</p>
+			<p>Creating a spritesheet is fairly easy, if you have a predefined element size that should never change, then you can simply stack your images horizontally and vertically in an image with enough margin to prevent other images to show along the edges. If you know that some of your elements size might increase in one direction, then you're better of creating a spritsheet that stacks all the images either horizontally or vertically, thus avoiding the problem with neighboring images.</p>
+			<h2>Responsive</h2>
+			<h3>Sprites</h3>
+			<p>The easiest way to make sprites responsive is to create several spritesheets in varying sizes and change the image used for all your sprites (easiest way is to use a colon separated selector that defines the <code>background-image</code>). You should always give your smaller sprites as much room as your larger ones. Lets say that your larger sprites are 128x128 pixels and your smaller ones are 64x64 pixels and that you are using horizontally stacked sprites. your second sprite should then be position at y128 and x0, the third one should be at y256 and x0. This is to avoid having to change the <code>background-position</code> of every single element in a media-query, we just have to change the <code>background-image</code></p>
+		</div>
+		<div class="container span24">
+			<div class="container span3">
+				<h4 class="span3">large</h4>
+				<div class="span3 bg-blue" style="background-image:url('./images/icons/tiles-large.png');height:386px;"></div>
+			</div>
+			<div class="container span3">
+				<h4 class="span3">desktop</h4>
+				<div class="span3 bg-blue" style="background-image:url('./images/icons/tiles.png');height:386px;"></div>
+			</div>
+			<div class="container span3">
+				<h4 class="span3">tablet</h4>
+				<div class="span3 bg-blue" style="background-image:url('./images/icons/tiles-tablet.png');height:386px;"></div>
+			</div>
+			<div class="span15">
+				<p>This example will obiously look weird on sizes other than desktop large since it displays the different spritesheets without swapping them.</p>
+			</div>
+		</div>
+		<div class="container span24" style="height:250px;">
+		</div>
+	</div>
+</body>

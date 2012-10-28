@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fullscreen MetroUI</title>
+	<script type="text/javascript" src="./scripts/JQuery-1.7.2-min.js"></script>
+	<script type="text/javascript" src="./scripts/metro.js"></script>
+	<link rel="stylesheet" type="text/css" href="./styles/metro.css"></link>
+	<link rel="stylesheet" type="text/css" href="./styles/metro-colors.css"></link>
+	<link rel="stylesheet" type="text/css" href="./styles/metro-animation.css"></link>
+</head>
+<body>
+	<div class="bg-black" style="position:relative;top:150px;">
+		<div class="metro-container center white">
+			<h1 class="header-six">simplistic</h1>
+			<div class="metro-container inner">
+				<div class="metro-container-four inner">
+					<p class="content">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque lectus gravida ante euismod rhoncus. Mauris et arcu lectus. Duis condimentum adipiscing neque vel bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum massa enim, pellentesque ultricies lacinia eget, rhoncus eget mi. Donec nisl erat, laoreet eget pulvinar vitae, rhoncus egestas ipsum. Nam eget felis vitae arcu egestas vestibulum.
+					</p>
+					<div class="metro-container-double inner">
+						<h2 class="header-double-half">Light, Clean, Open, Fast.</h2>
+						<p class="content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque lectus gravida ante euismod rhoncus.
+						</p>
+					</div>
+					<div class="metro-container-double inner">
+						<h2 class="header-double-half">Content, not Chrome.</h2>
+						<p class="content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque lectus gravida ante euismod rhoncus.
+						</p>
+					</div>
+					<div class="metro-container-double inner">
+						<h2 class="header-double-half">Typography.</h2>
+						<p class="content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque lectus gravida ante euismod rhoncus.
+						</p>
+					</div>
+					<div class="metro-container-double inner">
+						<h2 class="header-double-half">Alive and in motion.</h2>
+						<p class="content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque lectus gravida ante euismod rhoncus.
+						</p>
+					</div>
+					<div class="metro-container-double inner">
+						<h2 class="header-double-half">Authentically Digital.</h2>
+						<p class="content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque lectus gravida ante euismod rhoncus.
+						</p>
+					</div>
+				</div>
+				<div class="metro-container-double inner">
+					<div class="tile-double bg-blue">
+					</div>
+					<div class="tile-single slide-js">
+						<div class="heart bg-red"></div>	
+						<div class="game bg-orange"></div>
+						<div class="work bg-purple"></div>
+						<div class="music bg-pink"></div>
+						<div class="bg-blue me"></div>
+						<div class="clear no-slide-js"></div>
+					</div>
+					<div class="metro-container-single inner">
+						<div class="tile-quarter bg-blue twitter"></div>
+						<div class="tile-quarter bg-red"></div>
+						<div class="tile-quarter bg-green"></div>
+						<div class="tile-quarter bg-purple"></div>
+						<div class="clear"></div>
+					</div>	
+					<div class="tile-single ease-bg mosaic">
+						<div class="bg-blue"></div>
+						<div class="bg-green"></div>
+						<div class="bg-pink"></div>
+						<div class="bg-orange"></div>
+						<img src="./images/microsoft.png" class="bg-red" alt="ms"></img>
+						<div class="bg-lime"></div>
+						<div class="bg-brown"></div>
+						<div class="bg-purple"></div>
+						<div class="bg-red"></div>
+						<div class="bg-teal"></div>
+						<div class="bg-magenta"></div>
+						<div class="bg-blue"></div>
+						<div class="clear"></div>
+					</div>
+					<div class="tile-single bg-green microsoft"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slide-js').metroSlide();
+			$('.mosaic').metroMosaic();
+		});
+	</script>
+</body>
+</html>

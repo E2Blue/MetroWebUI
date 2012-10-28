@@ -6,7 +6,8 @@
 .linkedin,
 .youtube,
 .desktop {
-	background-image: url('../images/icons/tiles.png')
+	background-image: url('../images/icons/tiles.png');
+	background-repeat: no-repeat;
 }
 .microsoft {background-position:0px 0px}
 .wp{background-position: 0px -128px;}
