@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="./styles/shCore.css"></link>
 	<link rel="stylesheet" type="text/css" href="./styles/shThemeDefault.css"></link>
 	<script type="text/javascript" src="./scripts/shCore.js"></script>
-	<script type="text/javascript" src="./scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="./scripts/shBrushCss.js"></script>
 	<style>
 		#hero > * {
 			background-repeat:no-repeat;
@@ -79,6 +79,36 @@
 			</div>
 			<div class="span15">
 				<p>This example will obiously look weird on sizes other than desktop large since it displays the different spritesheets without swapping them.</p>
+				<pre class="brush:css;gutter:false;">
+.microsoft,
+.wp,
+.facebook {
+	background-image: url('../images/icons/tiles.png');
+	background-repeat: no-repeat;
+}
+
+.microsoft {background-position:0px 0px}
+.wp{background-position: 0px -128px;}
+.facebook{background-position:0px -256px;}
+
+@media (min-width:768px) and (max-width: 979px){
+	.microsoft,
+	.wp,
+	.facebook {
+		background-image: url('../images/icons/tiles-large.png');
+	}
+}
+
+@media (min-width:1200px){
+	.microsoft,
+	.wp,
+	.facebook {
+		background-image: url('../images/icons/tiles-tablet.png');
+	}
+}
+				</pre>
+				<p>The advantages of this method gets clearer the more sprites you add as the overhead per sprite gets smaller.</p>
+
 			</div>
 		</div>
 		<div class="container span24" style="height:250px;">
