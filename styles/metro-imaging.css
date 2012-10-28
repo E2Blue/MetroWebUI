@@ -8,11 +8,11 @@
 .desktop {
 	background-image: url('../images/icons/tiles.png')
 }
-.microsoft {background-position:-1px -1px}
-.wp{background-position:-129px -1px;}
-.facebook{background-position:-257px -1px;}
-.github{background-position:-385px -1px;}
-.twitter{background-position:-1px -129px;}
-.linkedin{background-position: -129px -129px;}
-.youtube{background-position: -257px -129px;}
-.desktop {background-position: -385px -129px;}
+.microsoft {background-position:0px 0px}
+.wp{background-position: 0px -128px;}
+.facebook{background-position:0px -256px;}
+.github{background-position:0px -384px;}
+.twitter{background-position:0px -512px;}
+.linkedin{background-position: 0px -640px;}
+.youtube{background-position: 0px -768px;}
+.desktop {background-position: 0px -896px;}
