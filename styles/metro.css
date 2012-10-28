@@ -1,150 +1,29 @@
 /* Reset */
-h1,h2,h3,h4,h5,h6,p {margin:0.2em 0;}
+h1,h2,h3,h4,h5,h6,p {margin:0.2em 0;line-height: 1.4em;}
 h1 {font-size:3.2em;}
 h2 {font-size: 2.1em;}
 body,ul,li {margin:0px;padding:0px;}
 ul,li {list-style:none;}
+a {text-decoration: none;}
 
 
 /* test typography */
 p {padding-bottom:10px;}
-
 .aside {font-size:0.76em;}
 
 /* Metro */
 body {font-family: 'Segoe UI', Helvetica, Arial, Sans-Serif;}
 
-/* == Layout base == */
-.tile-single,.tile-single>div,.tile-single>li,.header-single {width:150px;}
-.tile-double,.tile-double>div,.tile-double>li,.header-double {width:310px;}
-.tile-triple,.tile-triple>div,.tile-triple>li,.header-triple {width:470px;}
-.header-four {width:630px;}
-.header-six {width:950px;}
-.tile-quarter,.tile-quarter>div,.tile-quarter>li,.header-quarter {width:70px;}
-
-.metro-container-six,.metro-container {width:960px;}
-.metro-container-four {width:640px;}
-.metro-container-triple {width:480px;}
-.metro-container-double {width:320px;}
-.metro-container-single {width:160px;}
-.metro-container-quarter {width:80px;}
-
-/* == Headers == */
-.header-single-half,
-.header-double-half,
-.header-triple-half,
-.header-four-half,
-.header-six-half {
-	height:35px;
-	margin:0 5px;
-}
-
-.header-six,
-.header-four,
-.header-triple,
-.header-double,
-.header-single,
-.header-quarter {
-	height:70px;
-	margin:5px;
-}
-
-.header-double-half {width:310px;}
-.header-six-half {width:950px;}
-
-/* Fluid containers */
-.metro-container-six-fluid {max-width:960px;}
-.metro-container-four-fluid {max-width:640px;}
-.metro-container-double-fluid {max-width:320px;}
-.metro-container-single-fluid {max-width:160px;}
-
-/* Used for containing a set of tiles within a set of tiles */
-.metro-container-quarter.inner,
-.metro-container-single.inner,
-.metro-container-double.inner,
-.metro-container-triple.inner,
-.metro-container-four.inner,
-.metro-container-six.inner{
-	float:left;
-}
-
-.tile-single,
-.tile-double,
-.tile-triple,
-.tile-quarter,
-.header-single,
-.header-double,
-.header-triple,
-.header-four,
-.header-six,
-.header-quarter
-.header-single-half,
-.header-double-half,
-.header-triple-half,
-.header-four-half,
-.header-six-half {
-	position:relative;
-	float:left;
-	overflow:hidden;
-	padding:0;
-}
-
 .content {margin:5px;}
 p.content {font-size:0.9em;}
-
-.tile-single,
-.tile-double,
-.tile-triple {
-	height:150px;
-	margin:5px;
-}
-
-.tile-quarter {height:70px; margin:5px;}
-
-.tile-single>div,.tile-single>li,
-.tile-double>div,.tile-double>li,
-.tile-triple>div,.tile-triple>li,
-.tile-quarter>div,.tile-quarter>li{
-	height:150px;
-}
-
-/* HERO:
-	A hero unit is used for drawing a users attention.
-	The hero is always the size of its container
-	and the hero.double refers to its height.
-	Place the hero inside a inner container if you
-	want it to flow with a tile layout.
-*/
-.hero {margin:5px;height:150px;}
-.hero.double{height:310px;}
 
 /* == Navbar == */
 .navbar {}
 .navbar .item {float:left;margin-right:12px;}
 .navbar .item a:hover {text-decoration: none;}
 
-/* == temp == */
-.twitter,
-.microsoft,
-.heart,
-.game,
-.me,
-.work,
-.music {
-	background-repeat: no-repeat;
-	background-position: center center
-}
-.twitter {background-image: url('../images/twitter.png');}
-.tile-quarter.twitter {background-image: url('../images/twitter-quarter.png');}
-.microsoft {background-image:url('../images/microsoft.png');}
-.heart {background-image:url('../images/heart.png');}
-.game {background-image:url('../images/joystick.png');}
-.me {background-image:url('../images/user.png');}
-.work {background-image:url('../images/work.png');}
-.music {background-image:url('../images/headphone.png');}
-.help-mini {background-image:url('../images/help-mini.png');}
-.search-mini {background-image:url('../images/search-mini.png');}
-.mail-mini {background-image:url('../images/mail-mini.png');}
+/* == Tiles == */
+.tile {height:102px;}
 
 /* == Buttons == */
 .btn{padding:5px 10px 7px 10px;font-size: 16px;text-align: center;cursor:pointer;border:none;color:#333;}
@@ -222,6 +101,9 @@ p.content {font-size:0.9em;}
 .container.span3 {width:120px;}
 .container.span2 {width:80px;}
 .container.span1 {width:40px;}
+
+/* Modifiers */
+.highlight {margin-left:0px !important; border-left: 6px solid; padding-left:6px;}
 
 /* == Utility classes == */
 .clear {clear: both;}
