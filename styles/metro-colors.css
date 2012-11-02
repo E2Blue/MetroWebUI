@@ -26,7 +26,7 @@
 .btn.danger:hover{background-color:#CF1200;}
 .btn.inverse:hover{background-color:black;}
 
-.accent,.blue,.active {color:#1BA1E2;}
+.blue {color:#1BA1E2;}
 .brown {color:#A05000;}
 .green {color:#339933;}
 .lime {color:#A2C139;}
@@ -34,7 +34,7 @@
 .orange {color:#F09609;}
 .pink {color:#E671B8;}
 .purple {color:#A200FF;}
-.red {color:#E51400;}
+.red, .accent, .active, .navbar .item.active {color:#E51400;}
 .teal {color:#00ABA9;}
 .white,.btn.primary,.btn.success,.btn.warning,.btn.danger,.btn.inverse {color:white;}
 .darkgrey{color:#aaa;}

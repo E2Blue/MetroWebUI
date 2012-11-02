@@ -8,7 +8,7 @@ a {text-decoration: none;}
 
 
 /* test typography */
-p {padding-bottom:10px;}
+p {padding-bottom:10px;color:#2A2A2A;}
 .aside {font-size:0.76em;}
 
 /* Metro */
@@ -19,8 +19,7 @@ p.content {font-size:0.9em;}
 
 /* == Navbar == */
 .navbar {}
-.navbar .item {float:left;margin-right:12px;}
-.navbar .item a:hover {text-decoration: none;}
+.navbar .item {float:left;margin-right:24px;color:#333;font-size: 1.1em;}
 
 /* == Tiles == */
 .tile {height:102px;}
@@ -74,7 +73,7 @@ p.content {font-size:0.9em;}
 .container.span24,.container.span23,.container.span22,.container.span21,.container.span20,.container.span19,
 .container.span18,.container.span17,.container.span16,.container.span15,.container.span14,.container.span13,
 .container.span12,.container.span11,.container.span10,.container.span9,.container.span8,.container.span7,
-.container.span6,.container.span5,.container.span4,.container.span3,.container.span2,.container.span1{margin:0;min-height: 0;}
+.container.span6,.container.span5,.container.span4,.container.span3,.container.span2,.container.span1{margin:0;min-height: 1;}
 
 /* Width of containers when they are combined with span* */
 .container.span24 {width:960px;}
