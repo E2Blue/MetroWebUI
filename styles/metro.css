@@ -35,6 +35,8 @@ p.content {font-size:0.9em;}
 .modal > .content > .header, .modal > .content > .body, .modal > .content > .footer {width:940px;min-height:1px;margin-left:-10px;margin-top:20px;}
 
 /* == Grid == */
+/* The grid is based on a column being 22px with a margin of 9px to each side */
+
 .container {width:960px;margin:0 auto;}
 
 /* Base layout for all spans */
@@ -100,6 +102,9 @@ p.content {font-size:0.9em;}
 .container.span3 {width:120px;}
 .container.span2 {width:80px;}
 .container.span1 {width:40px;}
+
+/* pre for spans */
+.pre4 {margin-left:169px;}
 
 /* Modifiers */
 .highlight {margin-left:0px !important; border-left: 6px solid; padding-left:6px;}

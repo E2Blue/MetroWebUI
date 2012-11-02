@@ -1,5 +1,7 @@
 @media (min-width:1200px)
 {
+	/* The grid is now based on a column being 26px with a margin of 12px to each side */
+
 	/* Tiles */
 	.tile {height:126px;}
 
@@ -124,10 +126,14 @@
 	.container.span3-large {width:150px;}
 	.container.span2-large {width:100px;}
 	.container.span1-large {width:50px;}
+
+	.pre4 {margin-left:212px;}
 }
 
 @media (min-width:768px) and (max-width: 979px)
 {
+	/* The grid is now based on a column being 20px with a margin of 6px to each side */
+
 	/* Tiles */
 	.tile {height:84px;}
 
@@ -251,6 +257,8 @@
 	.container.span3-tablet {width:96px;}
 	.container.span2-tablet {width:64px;}
 	.container.span1-tablet {width:32px;}
+
+	.pre4 {margin-left: 134px;}
 }
 
 @media (max-width:767px)
