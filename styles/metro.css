@@ -22,7 +22,8 @@ p.content {font-size:0.9em;}
 .navbar .item {float:left;margin-right:24px;color:#333;font-size: 1.1em;}
 
 /* == Tiles == */
-.tile {height:102px;}
+.tile {height:102px;background-repeat: no-repeat;background-position: center left;}
+.tile.span3 {background-position: center center;}
 
 /* == Buttons == */
 .btn{padding:5px 10px 7px 10px;font-size: 16px;text-align: center;cursor:pointer;border:none;color:#333;}
@@ -106,7 +107,9 @@ p.content {font-size:0.9em;}
 /* pre for spans */
 .pre4 {margin-left:169px;}
 
-/* Modifiers */
+
+
+/* == Modifiers == */
 .highlight {margin-left:0px !important; border-left: 6px solid; padding-left:6px;}
 
 /* == Utility classes == */

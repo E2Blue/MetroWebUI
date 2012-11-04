@@ -207,7 +207,7 @@
 	.container.span2 {width:64px;}
 	.container.span1 {width:32px;}
 
-	/* The span*-tablet can unfortunately not be on the same row as the normal spans */
+	/* The span*-tablet can unfortunately not be combined with the normal span selektor */
 	.container > .span24-tablet {width:756px;}
 	.container > .span23-tablet {width:724px;}
 	.container > .span22-tablet {width:692px;}
