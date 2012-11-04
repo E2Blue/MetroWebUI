@@ -5,7 +5,8 @@
 .twitter,
 .linkedin,
 .youtube,
-.desktop {
+.desktop,
+.code {
 	background-image: url('../images/icons/tiles.png');
 	background-repeat: no-repeat;
 }
@@ -17,3 +18,4 @@
 .linkedin{background-position: 0px -640px;}
 .youtube{background-position: 0px -768px;}
 .desktop {background-position: 0px -896px;}
+.code {background-position: 0px -1024px;}

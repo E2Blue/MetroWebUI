@@ -14,7 +14,8 @@
 	.twitter,
 	.linkedin,
 	.youtube,
-	.desktop {
+	.desktop,
+	.code {
 		background-image: url('../images/icons/tiles-large.png')
 	}
 
@@ -145,7 +146,8 @@
 	.twitter,
 	.linkedin,
 	.youtube,
-	.desktop {
+	.desktop,
+	.code {
 		background-image: url('../images/icons/tiles-tablet.png')
 	}
 
