@@ -23,7 +23,6 @@ p.content {font-size:0.9em;}
 
 /* == Tiles == */
 .tile {height:102px;background-repeat: no-repeat;background-position: center left;}
-.tile.span3 {background-position: center center;}
 
 /* == Buttons == */
 .btn{padding:5px 10px 7px 10px;font-size: 16px;text-align: center;cursor:pointer;border:none;color:#333;}
